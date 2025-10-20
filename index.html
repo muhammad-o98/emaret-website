@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emaret Capital Group - Digital Marketing Master Strategy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            font-size: 1.3em;
+            opacity: 0.95;
+            margin-bottom: 30px;
+        }
+        
+        .meta-info {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            padding-top: 20px;
+            border-top: 2px solid rgba(255,255,255,0.3);
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .nav-menu {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 20px;
+            z-index: 100;
+        }
+        
+        .nav-menu h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+        
+        .nav-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .nav-link {
+            padding: 12px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .nav-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .section {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            font-size: 2.2em;
+            margin-bottom: 30px;
+            color: #333;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        h3 {
+            font-size: 1.6em;
+            margin: 30px 0 20px;
+            color: #555;
+        }
+        
+        h4 {
+            font-size: 1.3em;
+            margin: 20px 0 15px;
+            color: #666;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 25px 0;
+        }
+        
+        .card {
+            padding: 25px;
+            background: linear-gradient(145deg, #f8f9fa, #e9ecef);
+            border-radius: 12px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .card h4 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        
+        .metric-card {
+            padding: 20px;
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .metric-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .metric-label {
+            color: #666;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .timeline {
+            position: relative;
+            padding: 30px 0;
+        }
+        
+        .timeline-item {
+            display: flex;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        .timeline-marker {
+            width: 40px;
+            height: 40px;
+            background: #667eea;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        
+        .timeline-content {
+            margin-left: 30px;
+            flex: 1;
+        }
+        
+        .timeline-line {
+            position: absolute;
+            left: 20px;
+            top: 40px;
+            bottom: -40px;
+            width: 2px;
+            background: #e9ecef;
+        }
+        
+        .timeline-item:last-child .timeline-line {
+            display: none;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+        
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        th {
+            background: #667eea;
+            color: white;
+            font-weight: 600;
+        }
+        
+        tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 5px 12px;
+            background: #667eea;
+            color: white;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin: 5px;
+        }
+        
+        .badge.success {
+            background: #28a745;
+        }
+        
+        .badge.warning {
+            background: #ffc107;
+            color: #333;
+        }
+        
+        .badge.info {
+            background: #17a2b8;
+        }
+        
+        ul {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin: 10px 0;
+        }
+        
+        .campaign-flow {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 15px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .flow-step {
+            flex: 1;
+            min-width: 150px;
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .flow-arrow {
+            font-size: 2em;
+            color: #667eea;
+            margin: 0 10px;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+            padding: 25px;
+            border-radius: 10px;
+            margin: 25px 0;
+            border-left: 5px solid #667eea;
+        }
+        
+        .cta-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .cta-box h3 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-links {
+                grid-template-columns: 1fr;
+            }
+            
+            .flow-arrow {
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Digital Marketing Master Strategy</h1>
+            <p class="subtitle">Complete Implementation Blueprint for Emaret Capital Group</p>
+            <div class="meta-info">
+                <div class="meta-item">
+                    <span>📅</span>
+                    <span>Q4 2024 - Q1 2025</span>
+                </div>
+                <div class="meta-item">
+                    <span>💼</span>
+                    <span>Real Estate Syndication Marketing</span>
+                </div>
+                <div class="meta-item">
+                    <span>🎯</span>
+                    <span>Accredited Investor Acquisition</span>
+                </div>
+                <div class="meta-item">
+                    <span>📈</span>
+                    <span>Target: 250+ Qualified Leads</span>
+                </div>
+            </div>
+        </header>
+
+        <nav class="nav-menu">
+            <h2>Strategy Components</h2>
+            <div class="nav-links">
+                <a href="#executive-summary" class="nav-link">Executive Summary</a>
+                <a href="#market-analysis" class="nav-link">Market Analysis</a>
+                <a href="#campaign-architecture" class="nav-link">Campaign Architecture</a>
+                <a href="#ppc-strategy" class="nav-link">PPC Strategy</a>
+                <a href="#creative-framework" class="nav-link">Creative Framework</a>
+                <a href="#technical-implementation" class="nav-link">Technical Setup</a>
+                <a href="#automation-workflows" class="nav-link">Automation & CRM</a>
+                <a href="#kpis-metrics" class="nav-link">KPIs & Metrics</a>
+                <a href="#timeline" class="nav-link">Implementation Timeline</a>
+                <a href="#budget-allocation" class="nav-link">Budget Allocation</a>
+            </div>
+        </nav>
+
+        <section id="executive-summary" class="section">
+            <h2>Executive Summary</h2>
+            
+            <div class="highlight">
+                <h3>Strategic Objective</h3>
+                <p>Transform Emaret Capital Group into a digitally-driven real estate syndication powerhouse by building a scalable investor acquisition system that generates consistent, qualified leads while establishing market authority in Texas multifamily investments.</p>
+            </div>
+
+            <div class="grid">
+                <div class="card">
+                    <h4>Primary Goals</h4>
+                    <ul>
+                        <li>Generate 250+ qualified accredited investor leads in 90 days</li>
+                        <li>Achieve sub-$200 cost per qualified lead</li>
+                        <li>Build 1,000+ investor email database</li>
+                        <li>Close 5-10 investors for current syndication</li>
+                        <li>Establish Emaret as Texas market thought leader</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h4>Core Value Propositions</h4>
+                    <ul>
+                        <li>500+ unit portfolio track record</li>
+                        <li>46% target IRR on value-add properties</li>
+                        <li>Local market expertise in high-growth areas</li>
+                        <li>Hands-on renovation and management approach</li>
+                        <li>Alignment with Freeport LNG expansion opportunity</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h4>Success Metrics</h4>
+                    <ul>
+                        <li>Lead Quality Score: >80%</li>
+                        <li>Booking Rate: >15%</li>
+                        <li>Email Open Rate: >35%</li>
+                        <li>ROAS: 5:1 within 6 months</li>
+                        <li>CAC Payback: <3 months</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="market-analysis" class="section">
+            <h2>Market Analysis & Positioning</h2>
+            
+            <h3>Target Market Segmentation</h3>
+            <div class="grid">
+                <div class="card">
+                    <h4>Primary Audience: High Net Worth Individuals</h4>
+                    <ul>
+                        <li><strong>Demographics:</strong> Age 35-65, $250K+ income</li>
+                        <li><strong>Psychographics:</strong> Passive income seekers, tax optimization focused</li>
+                        <li><strong>Investment Range:</strong> $50K-$500K per deal</li>
+                        <li><strong>Geographic Focus:</strong> Texas, California, New York</li>
+                        <li><strong>Pain Points:</strong> Stock market volatility, inflation concerns</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h4>Secondary Audience: Family Offices</h4>
+                    <ul>
+                        <li><strong>AUM Range:</strong> $50M-$500M</li>
+                        <li><strong>Investment Thesis:</strong> Diversification into real assets</li>
+                        <li><strong>Decision Timeline:</strong> 3-6 months</li>
+                        <li><strong>Key Criteria:</strong> Track record, market fundamentals</li>
+                        <li><strong>Preferred Communication:</strong> Detailed decks, direct meetings</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h4>Tertiary Audience: Self-Directed IRA Holders</h4>
+                    <ul>
+                        <li><strong>Account Size:</strong> $100K-$1M</li>
+                        <li><strong>Motivation:</strong> Alternative investments for retirement</li>
+                        <li><strong>Education Need:</strong> High - require SDIRA process guidance</li>
+                        <li><strong>Conversion Rate:</strong> Lower but high lifetime value</li>
+                        <li><strong>Content Preference:</strong> Educational webinars, guides</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Competitive Landscape Analysis</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Competitor</th>
+                        <th>Digital Presence</th>
+                        <th>Ad Spend (Est.)</th>
+                        <th>Key Differentiators</th>
+                        <th>Weaknesses to Exploit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Large REITs</td>
+                        <td>Strong</td>
+                        <td>$50K+/month</td>
+                        <td>Brand recognition, scale</td>
+                        <td>Impersonal, low minimum too high</td>
+                    </tr>
+                    <tr>
+                        <td>Regional Syndicators</td>
+                        <td>Moderate</td>
+                        <td>$5-15K/month</td>
+                        <td>Local knowledge</td>
+                        <td>Limited track record, poor digital presence</td>
+                    </tr>
+                    <tr>
+                        <td>Crowdfunding Platforms</td>
+                        <td>Very Strong</td>
+                        <td>$100K+/month</td>
+                        <td>Low minimums, tech-forward</td>
+                        <td>No direct relationship, fees</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="campaign-architecture" class="section">
+            <h2>Campaign Architecture & Structure</h2>
+            
+            <h3>Multi-Channel Funnel Strategy</h3>
+            <div class="campaign-flow">
+                <div class="flow-step">
+                    <h4>Awareness</h4>
+                    <p>Display, Video, Social</p>
+                    <span class="badge">Cold Traffic</span>
+                </div>
+                <span class="flow-arrow">→</span>
+                <div class="flow-step">
+                    <h4>Interest</h4>
+                    <p>Search, Content, Webinar</p>
+                    <span class="badge warning">Warm Traffic</span>
+                </div>
+                <span class="flow-arrow">→</span>
+                <div class="flow-step">
+                    <h4>Consideration</h4>
+                    <p>Email, Retargeting, SMS</p>
+                    <span class="badge info">Engaged Leads</span>
+                </div>
+                <span class="flow-arrow">→</span>
+                <div class="flow-step">
+                    <h4>Decision</h4>
+                    <p>1-on-1 Calls, Deal Room</p>
+                    <span class="badge success">Qualified Investors</span>
+                </div>
+            </div>
+
+            <h3>Campaign Hierarchy</h3>
+            
+            <h4>Google Ads Structure</h4>
+            <div class="grid">
+                <div class="card">
+                    <h4>Search Campaigns</h4>
+                    <ul>
+                        <li><strong>Brand Campaign:</strong> Emaret-specific terms</li>
+                        <li><strong>Competitor Campaign:</strong> Alternative targeting</li>
+                        <li><strong>Generic High-Intent:</strong> "real estate syndication Texas"</li>
+                        <li><strong>Problem-Aware:</strong> "passive income real estate"</li>
+                        <li><strong>Location-Specific:</strong> "Brazoria County investments"</li>
+                    </ul>
+                    <p><strong>Budget Allocation:</strong> 40% of Google Ads budget</p>
+                </div>
+                
+                <div class="card">
+                    <h4>Display & YouTube Campaigns</h4>
+                    <ul>
+                        <li><strong>Prospecting Display:</strong> Affinity audiences</li>
+                        <li><strong>Custom Intent:</strong> Investment behavior targeting</li>
+                        <li><strong>YouTube Pre-Roll:</strong> Property tour videos</li>
+                        <li><strong>Discovery Ads:</strong> Gmail promotions tab</li>
+                        <li><strong>Remarketing:</strong> Site visitors, video viewers</li>
+                    </ul>
+                    <p><strong>Budget Allocation:</strong> 35% of Google Ads budget</p>
+                </div>
+                
+                <div class="card">
+                    <h4>Performance Max Campaign</h4>
+                    <ul>
+                        <li><strong>Asset Groups:</strong> 3 themes (value-add, passive income, Texas growth)</li>
+                        <li><strong>Audience Signals:</strong> Customer match, similar audiences</li>
+                        <li><strong>Conversion Goals:</strong> Lead form, calendar booking</li>
+                        <li><strong>Bid Strategy:</strong> Target CPA $150</li>
+                        <li><strong>Location Targeting:</strong> Top 50 US metros</li>
+                    </ul>
+                    <p><strong>Budget Allocation:</strong> 25% of Google Ads budget</p>
+                </div>
+            </div>
+
+            <h4>Meta Ads Structure</h4>
+            <div class="grid">
+                <div class="card">
+                    <h4>Prospecting Campaigns</h4>
+                    <ul>
+                        <li><strong>Interest Stacks:</strong> Real estate + investing + business owners</li>
+                        <li><strong>Lookalike Audiences:</strong> 1-3% of customer list</li>
+                        <li><strong>Broad Targeting:</strong> Advantage+ audience</li>
+                        <li><strong>Video Views:</strong> Property transformation content</li>
+                        <li><strong>Lead Generation:</strong> Instant forms</li>
+                    </ul>
+                    <p><strong>Budget Allocation:</strong> 60% of Meta budget</p>
+                </div>
+                
+                <div class="card">
+                    <h4>Retargeting Campaigns</h4>
+                    <ul>
+                        <li><strong>Website Visitors:</strong> 1, 7, 30, 180 day windows</li>
+                        <li><strong>Engagement:</strong> Video viewers, page engagers</li>
+                        <li><strong>Email List:</strong> Customer match upload</li>
+                        <li><strong>Event-Based:</strong> Webinar attendees</li>
+                        <li><strong>Dynamic Ads:</strong> Property-specific creative</li>
+                    </ul>
+                    <p><strong>Budget Allocation:</strong> 40% of Meta budget</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ppc-strategy" class="section">
+            <h2>Advanced PPC Strategy & Optimization</h2>
+            
+            <h3>Keyword Strategy Matrix</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Example Keywords</th>
+                        <th>Intent Level</th>
+                        <th>Bid Strategy</th>
+                        <th>Expected CPC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Transactional</td>
+                        <td>"invest in real estate syndication", "multifamily investment opportunities"</td>
+                        <td><span class="badge success">High</span></td>
+                        <td>Target ROAS</td>
+                        <td>$15-25</td>
+                    </tr>
+                    <tr>
+                        <td>Commercial Investigation</td>
+                        <td>"best real estate syndication companies", "Emaret Capital review"</td>
+                        <td><span class="badge warning">Medium-High</span></td>
+                        <td>Target CPA</td>
+                        <td>$8-15</td>
+                    </tr>
+                    <tr>
+                        <td>Informational</td>
+                        <td>"what is real estate syndication", "how to invest in apartment buildings"</td>
+                        <td><span class="badge info">Medium</span></td>
+                        <td>Maximize Clicks</td>
+                        <td>$3-8</td>
+                    </tr>
+                    <tr>
+                        <td>Navigational</td>
+                        <td>"Emaret Capital Group", "Emaret Holdings login"</td>
+                        <td><span class="badge">Variable</span></td>
+                        <td>Manual CPC</td>
+                        <td>$1-3</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Negative Keyword Strategy</h3>
+            <div class="highlight">
+                <h4>Categories to Exclude:</h4>
+                <ul>
+                    <li><strong>Career Seekers:</strong> jobs, careers, hiring, employment</li>
+                    <li><strong>DIY/Education Only:</strong> course, training, tutorial, how to start</li>
+                    <li><strong>Low Intent:</strong> free, cheap, discount, wholesale</li>
+                    <li><strong>Wrong Asset Class:</strong> stocks, crypto, forex, commodities</li>
+                    <li><strong>Geographic Exclusions:</strong> International locations, non-target states</li>
+                </ul>
+            </div>
+
+            <h3>Bid Adjustment Strategy</h3>
+            <div class="metric-grid">
+                <div class="metric-card">
+                    <div class="metric-value">+30%</div>
+                    <div class="metric-label">Top 20% Income Demographics</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">+20%</div>
+                    <div class="metric-label">Texas Geographic</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">+15%</div>
+                    <div class="metric-label">Mobile Devices</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">-20%</div>
+                    <div class="metric-label">Age Under 30</div>
+                </div>
+            </div>
+
+            <h3>Quality Score Optimization</h3>
+            <div class="grid">
+                <div class="card">
+                    <h4>Ad Relevance</h4>
+                    <ul>
+                        <li>Dynamic keyword insertion in headlines</li>
+                        <li>Location-specific ad customizers</li>
+                        <li>Responsive search ads with 15+ headlines</li>
+                        <li>Pinned CTAs in description positions</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>Landing Page Experience</h4>
+                    <ul>
+                        <li>Page speed under 3 seconds</li>
+                        <li>Mobile-first responsive design</li>
+                        <li>Clear value proposition above fold</li>
+                        <li>Trust signals and social proof</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>Expected CTR</h4>
+                    <ul>
+                        <li>Ad extension utilization (all types)</li>
+                        <li>Compelling offers and urgency</li>
+                        <li>Emotional triggers in copy</li>
+                        <li>Numbers and statistics in headlines</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="creative-framework" class="section">
+            <h2>Creative Framework & Content Strategy</h2>
+            
+            <h3>Ad Creative Matrix</h3>
+            
+            <h4>Search Ad Templates</h4>
+            <div class="highlight">
+                <h4>High-Intent Search Ad Example:</h4>
+                <p><strong>Headline 1:</strong> Texas Multifamily Investment | 46% Target IRR</p>
+                <p><strong>Headline 2:</strong> Accredited Investors Only | $50K Minimum</p>
+                <p><strong>Headline 3:</strong> 500+ Units Under Management | Proven Track Record</p>
+                <p><strong>Description 1:</strong> Join successful investors earning passive income through value-add apartment investments in high-growth Texas markets.</p>
+                <p><strong>Description 2:</strong> Current opportunity: 288-unit property with immediate cash flow. Schedule your investor call today. SEC Reg D 506(c) Offering.</p>
+            </div>
+
+            <h4>Display & Video Creative Themes</h4>
+            <div class="grid">
+                <div class="card">
+                    <h4>Theme 1: Transformation Story</h4>
+                    <ul>
+                        <li>Before/after property renovations</li>
+                        <li>Time-lapse renovation videos</li>
+                        <li>ROI visualization graphics</li>
+                        <li>Tenant testimonials</li>
+                    </ul>
+                    <span class="badge">Awareness Stage</span>
+                </div>
+                
+                <div class="card">
+                    <h4>Theme 2: Market Opportunity</h4>
+                    <ul>
+                        <li>Freeport LNG expansion impact</li>
+                        <li>Texas population growth stats</li>
+                        <li>Rent growth projections</li>
+                        <li>Employment data visualization</li>
+                    </ul>
+                    <span class="badge warning">Consideration Stage</span>
+                </div>
+                
+                <div class="card">
+                    <h4>Theme 3: Investor Success</h4>
+                    <ul>
+                        <li>Portfolio performance charts</li>
+                        <li>Distribution payment proof</li>
+                        <li>Investor testimonial videos</li>
+                        <li>Case study presentations</li>
+                    </ul>
+                    <span class="badge success">Decision Stage</span>
+                </div>
+            </div>
+
+            <h3>Landing Page Architecture</h3>
+            
+            <h4>Primary Landing Page Structure</h4>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">1</div>
+                    <div class="timeline-content">
+                        <h4>Hero Section</h4>
+                        <ul>
+                            <li>Headline: "Earn 15-20% Annual Returns Through Texas Apartment Investments"</li>
+                            <li>Subheadline: "Join 200+ Accredited Investors Building Wealth Through Real Estate"</li>
+                            <li>Video: 90-second property portfolio overview</li>
+                            <li>CTA: "Schedule Investor Call" + "Download Investment Deck"</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-line"></div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">2</div>
+                    <div class="timeline-content">
+                        <h4>Social Proof Section</h4>
+                        <ul>
+                            <li>Logo bar: "As Featured In" publications</li>
+                            <li>Statistics: 500+ units, $25M+ raised, 46% avg IRR</li>
+                            <li>Investor testimonials carousel</li>
+                            <li>Trust badges: BBB, industry associations</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-line"></div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">3</div>
+                    <div class="timeline-content">
+                        <h4>Current Opportunity</h4>
+                        <ul>
+                            <li>Property highlights with imagery</li>
+                            <li>Investment terms table</li>
+                            <li>Projected returns calculator</li>
+                            <li>Market analysis snapshot</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-line"></div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">4</div>
+                    <div class="timeline-content">
+                        <h4>Track Record</h4>
+                        <ul>
+                            <li>Portfolio performance timeline</li>
+                            <li>Before/after transformations gallery</li>
+                            <li>Deal-by-deal returns table</li>
+                            <li>Download case studies CTA</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-line"></div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">5</div>
+                    <div class="timeline-content">
+                        <h4>Final CTA Section</h4>
+                        <ul>
+                            <li>Urgency element: "Only X units remaining"</li>
+                            <li>3-step process visualization</li>
+                            <li>Dual CTA: Call booking + Document download</li>
+                            <li>FAQ accordion addressing objections</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="technical-implementation" class="section">
+            <h2>Technical Implementation & Tracking</h2>
+            
+            <h3>Analytics Architecture</h3>
+            
+            <h4>GA4 Event Tracking Structure</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Event Category</th>
+                        <th>Event Name</th>
+                        <th>Parameters</th>
+                        <th>Conversion Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Engagement</td>
+                        <td>video_play</td>
+                        <td>video_title, duration, percentage_watched</td>
+                        <td>Micro-conversion</td>
+                    </tr>
+                    <tr>
+                        <td>Lead Generation</td>
+                        <td>form_submit</td>
+                        <td>form_type, lead_source, investment_amount</td>
+                        <td>Primary conversion</td>
+                    </tr>
+                    <tr>
+                        <td>Engagement</td>
+                        <td>document_download</td>
+                        <td>document_type, page_location</td>
+                        <td>Secondary conversion</td>
+                    </tr>
+                    <tr>
+                        <td>Lead Generation</td>
+                        <td>calendar_booking</td>
+                        <td>meeting_type, time_slot</td>
+                        <td>Primary conversion</td>
+                    </tr>
+                    <tr>
+                        <td>Remarketing</td>
+                        <td>page_scroll</td>
+                        <td>scroll_percentage, time_on_page</td>
+                        <td>Audience building</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4>GTM Container Structure</h4>
+            <div class="grid">
+                <div class="card">
+                    <h4>Tags to Implement</h4>
+                    <ul>
+                        <li>GA4 Configuration Tag</li>
+                        <li>Google Ads Conversion Tracking</li>
+                        <li>Google Ads Remarketing</li>
+                        <li>Meta Pixel Base Code</li>
+                        <li>Meta Conversions (Lead, Schedule, ViewContent)</li>
+                        <li>LinkedIn Insight Tag</li>
+                        <li>Microsoft Clarity Heatmaps</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h4>Triggers Configuration</h4>
+                    <ul>
+                        <li>All Pages (Pageview tracking)</li>
+                        <li>Form Submission (investor forms)</li>
+                        <li>Click - Email (mailto: links)</li>
+                        <li>Click - Phone (tel: links)</li>
+                        <li>Scroll Depth (25%, 50%, 75%, 90%)</li>
+                        <li>YouTube Video Engagement</li>
+                        <li>Timer (engaged time tracking)</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h4>Variables Setup</h4>
+                    <ul>
+                        <li>Click URL (for outbound links)</li>
+                        <li>Click Text (CTA tracking)</li>
+                        <li>Form ID (form differentiation)</li>
+                        <li>Page Path (content grouping)</li>
+                        <li>Referrer (source tracking)</li>
+                        <li>Video Status (play, pause, complete)</li>
+                        <li>Custom JavaScript (lead scoring)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Conversion Rate Optimization Setup</h3>
+            <div class="highlight">
+                <h4>A/B Testing Priority Queue</h4>
+                <ol>
+                    <li><strong>Headlines:</strong> Benefit-focused vs. Feature-focused</li>
+                    <li><strong>CTA Buttons:</strong> Color, text, placement variations</li>
+                    <li><strong>Form Length:</strong> 3 fields vs. 5 fields vs. progressive</li>
+                    <li><strong>Social Proof:</strong> Testimonials vs. Statistics vs. Logos</li>
+                    <li><strong>Video:</strong> Autoplay vs. Click-to-play vs. No video</li>
+                    <li><strong>Urgency Elements:</strong> Countdown vs. Limited spots vs. None</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="automation-workflows" class="section">
+            <h2>Marketing Automation & CRM Workflows</h2>
+            
+            <h3>GoHighLevel CRM Configuration</h3>
+            
+            <h4>Pipeline Stages</h4>
+            <div class="campaign-flow">
+                <div class="flow-step">
+                    <h4>New Lead</h4>
+                    <p>Unqualified</p>
+                    <span class="badge">0-2 hours</span>
+                </div>
+                <span class="flow-arrow">→</span>
+                <div class="flow-step">
+                    <h4>Qualified</h4>
+                    <p>Accredited Verified</p>
+                    <span class="badge warning">2-24 hours</span>
+                </div>
+                <span class="flow-arrow">→</span>
+                <div class="flow-step">
+                    <h4>Scheduled</h4>
+                    <p>Call Booked</p>
+                    <span class="badge info">1-7 days</span>
+                </div>
+                <span class="flow-arrow">→</span>
+                <div class="flow-step">
+                    <h4>Soft Commit</h4>
+                    <p>Verbal Interest</p>
+                    <span class="badge success">7-30 days</span>
+                </div>
+                <span class="flow-arrow">→</span>
+                <div class="flow-step">
+                    <h4>Funded</h4>
+                    <p>Investment Complete</p>
+                    <span class="badge success">30-60 days</span>
+                </div>
+            </div>
+
+            <h4>Email Automation Sequences</h4>
+            
+            <div class="grid">
+                <div class="card">
+                    <h4>New Lead Nurture (7-Day)</h4>
+                    <ul>
+                        <li><strong>Day 0:</strong> Welcome + Investment Philosophy</li>
+                        <li><strong>Day 1:</strong> Case Study: Recent Success</li>
+                        <li><strong>Day 3:</strong> Market Analysis Report</li>
+                        <li><strong>Day 5:</strong> Investor Testimonials</li>
+                        <li><strong>Day 7:</strong> Invitation to Schedule Call</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h4>Long-Term Nurture (90-Day)</h4>
+                    <ul>
+                        <li><strong>Week 2-4:</strong> Educational content (2x/week)</li>
+                        <li><strong>Week 5-8:</strong> Market updates (1x/week)</li>
+                        <li><strong>Week 9-12:</strong> New opportunities (1x/2 weeks)</li>
+                        <li><strong>Ongoing:</strong> Monthly newsletter</li>
+                        <li><strong>Quarterly:</strong> Portfolio performance reports</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h4>Re-engagement Campaign</h4>
+                    <ul>
+                        <li><strong>Trigger:</strong> 30 days no engagement</li>
+                        <li><strong>Email 1:</strong> "Market Update You Missed"</li>
+                        <li><strong>Email 2:</strong> "New Investment Opportunity"</li>
+                        <li><strong>Email 3:</strong> "Last Chance - Exclusive Webinar"</li>
+                        <li><strong>Email 4:</strong> "Preference Center/Unsubscribe"</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h4>SMS Automation Workflows</h4>
+            <div class="highlight">
+                <h4>Text Messaging Strategy</h4>
+                <ul>
+                    <li><strong>Appointment Reminders:</strong> 24 hours and 1 hour before scheduled calls</li>
+                    <li><strong>Document Delivery:</strong> Instant delivery of requested materials</li>
+                    <li><strong>Urgent Updates:</strong> Deal closing notifications, last chance alerts</li>
+                    <li><strong>Webinar Reminders:</strong> Registration confirmation, go-live alerts</li>
+                    <li><strong>Compliance:</strong> All messages include opt-out instructions</li>
+                </ul>
+            </div>
+
+            <h3>Lead Scoring Model</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Action</th>
+                        <th>Points</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Accredited investor verification</td>
+                        <td>+50</td>
+                        <td>Qualification</td>
+                    </tr>
+                    <tr>
+                        <td>Investment amount $100K+</td>
+                        <td>+30</td>
+                        <td>Qualification</td>
+                    </tr>
+                    <tr>
+                        <td>Downloads investment deck</td>
+                        <td>+20</td>
+                        <td>Engagement</td>
+                    </tr>
+                    <tr>
+                        <td>Watches 75%+ of video</td>
+                        <td>+15</td>
+                        <td>Engagement</td>
+                    </tr>
+                    <tr>
+                        <td>Opens 5+ emails</td>
+                        <td>+10</td>
+                        <td>Engagement</td>
+                    </tr>
+                    <tr>
+                        <td>Visits pricing page</td>
+                        <td>+25</td>
+                        <td>Intent</td>
+                    </tr>
+                    <tr>
+                        <td>Books discovery call</td>
+                        <td>+40</td>
+                        <td>Intent</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><strong>MQL Threshold:</strong> 50 points | <strong>SQL Threshold:</strong> 100 points</p>
+        </section>
+
+        <section id="kpis-metrics" class="section">
+            <h2>KPIs & Performance Metrics</h2>
+            
+            <h3>North Star Metrics</h3>
+            <div class="metric-grid">
+                <div class="metric-card">
+                    <div class="metric-value">$150</div>
+                    <div class="metric-label">Target CPL</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">15%</div>
+                    <div class="metric-label">Lead to Investor Rate</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">5:1</div>
+                    <div class="metric-label">ROAS (6-month)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$50K</div>
+                    <div class="metric-label">Avg Investment Size</div>
+                </div>
+            </div>
+
+            <h3>Channel-Specific KPIs</h3>
+            
+            <h4>Google Ads Performance Targets</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Month 1</th>
+                        <th>Month 2</th>
+                        <th>Month 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Click-Through Rate</td>
+                        <td>3%</td>
+                        <td>4%</td>
+                        <td>5%</td>
+                    </tr>
+                    <tr>
+                        <td>Conversion Rate</td>
+                        <td>5%</td>
+                        <td>8%</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td>Quality Score Avg</td>
+                        <td>6/10</td>
+                        <td>7/10</td>
+                        <td>8/10</td>
+                    </tr>
+                    <tr>
+                        <td>Cost Per Conversion</td>
+                        <td>$200</td>
+                        <td>$175</td>
+                        <td>$150</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4>Meta Ads Performance Targets</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Month 1</th>
+                        <th>Month 2</th>
+                        <th>Month 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CTR (Link)</td>
+                        <td>1.5%</td>
+                        <td>2%</td>
+                        <td>2.5%</td>
+                    </tr>
+                    <tr>
+                        <td>CPM</td>
+                        <td>$40</td>
+                        <td>$35</td>
+                        <td>$30</td>
+                    </tr>
+                    <tr>
+                        <td>Lead Form Completion</td>
+                        <td>40%</td>
+                        <td>50%</td>
+                        <td>60%</td>
+                    </tr>
+                    <tr>
+                        <td>Video Completion Rate</td>
+                        <td>25%</td>
+                        <td>30%</td>
+                        <td>35%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Dashboard & Reporting Structure</h3>
+            <div class="grid">
+                <div class="card">
+                    <h4>Real-Time Dashboard (Daily)</h4>
+                    <ul>
+                        <li>Spend pacing by channel</li>
+                        <li>Lead volume and quality score</li>
+                        <li>Conversion tracking status</li>
+                        <li>Top performing ads/keywords</li>
+                        <li>CPA trends</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h4>Weekly Report</h4>
+                    <ul>
+                        <li>Performance vs. goals</li>
+                        <li>Optimization actions taken</li>
+                        <li>A/B test results</li>
+                        <li>Lead quality analysis</li>
+                        <li>Budget utilization</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h4>Monthly Deep Dive</h4>
+                    <ul>
+                        <li>Full funnel analysis</li>
+                        <li>Cohort performance</li>
+                        <li>Attribution modeling</li>
+                        <li>Competitive insights</li>
+                        <li>Strategic recommendations</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline" class="section">
+            <h2>90-Day Implementation Timeline</h2>
+            
+            <h3>Month 1: Foundation & Launch</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">W1</div>
+                    <div class="timeline-content">
+                        <h4>Week 1: Setup & Access</h4>
+                        <ul>
+                            <li>Account creation and access provisioning</li>
+                            <li>GA4 and GTM implementation</li>
+                            <li>Pixel installations and testing</li>
+                            <li>CRM configuration and API connections</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-line"></div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">W2</div>
+                    <div class="timeline-content">
+                        <h4>Week 2: Creative Development</h4>
+                        <ul>
+                            <li>Landing page design and development</li>
+                            <li>Ad creative production (images, videos)</li>
+                            <li>Copy writing and compliance review</li>
+                            <li>Email templates and sequences</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-line"></div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">W3</div>
+                    <div class="timeline-content">
+                        <h4>Week 3: Campaign Build</h4>
+                        <ul>
+                            <li>Google Ads campaign structure</li>
+                            <li>Meta campaign setup</li>
+                            <li>Audience creation and targeting</li>
+                            <li>Conversion tracking verification</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-line"></div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">W4</div>
+                    <div class="timeline-content">
+                        <h4>Week 4: Launch & Monitor</h4>
+                        <ul>
+                            <li>Soft launch with limited budget</li>
+                            <li>Real-time monitoring and adjustments</li>
+                            <li>Initial performance assessment</li>
+                            <li>Quick optimization iterations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Month 2: Optimization & Scale</h3>
+            <div class="grid">
+                <div class="card">
+                    <h4>Weeks 5-6</h4>
+                    <ul>
+                        <li>Performance data analysis</li>
+                        <li>Bid strategy refinements</li>
+                        <li>Creative A/B testing launch</li>
+                        <li>Landing page optimization</li>
+                        <li>Budget reallocation to winners</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h4>Weeks 7-8</h4>
+                    <ul>
+                        <li>Scale successful campaigns</li>
+                        <li>New audience testing</li>
+                        <li>Remarketing campaign launch</li>
+                        <li>Email nurture optimization</li>
+                        <li>Lead quality feedback loop</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Month 3: Expansion & Automation</h3>
+            <div class="grid">
+                <div class="card">
+                    <h4>Weeks 9-10</h4>
+                    <ul>
+                        <li>New channel testing (LinkedIn, etc.)</li>
+                        <li>Advanced automation implementation</li>
+                        <li>Webinar funnel integration</li>
+                        <li>Referral program setup</li>
+                        <li>Content marketing alignment</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h4>Weeks 11-12</h4>
+                    <ul>
+                        <li>Full performance review</li>
+                        <li>ROI analysis and reporting</li>
+                        <li>Strategy refinement for Q2</li>
+                        <li>Budget recommendations</li>
+                        <li>Roadmap for continued growth</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="budget-allocation" class="section">
+            <h2>Budget Allocation & ROI Projections</h2>
+            
+            <h3>Recommended Budget Structure</h3>
+            
+            <h4>Monthly Investment Breakdown</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Month 1</th>
+                        <th>Month 2</th>
+                        <th>Month 3</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Setup & Creative (One-time)</strong></td>
+                        <td>$5,500</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>$5,500</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Management Fee</strong></td>
+                        <td>$2,500</td>
+                        <td>$2,500</td>
+                        <td>$2,500</td>
+                        <td>$7,500</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ad Spend</strong></td>
+                        <td>$5,000</td>
+                        <td>$7,500</td>
+                        <td>$10,000</td>
+                        <td>$22,500</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ad Spend Fee (20%)</strong></td>
+                        <td>$1,000</td>
+                        <td>$1,500</td>
+                        <td>$2,000</td>
+                        <td>$4,500</td>
+                    </tr>
+                    <tr style="font-weight: bold; background: #f8f9fa;">
+                        <td>Total Monthly Investment</td>
+                        <td>$14,000</td>
+                        <td>$11,500</td>
+                        <td>$14,500</td>
+                        <td>$40,000</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4>Channel Budget Allocation</h4>
+            <div class="metric-grid">
+                <div class="metric-card">
+                    <div class="metric-value">50%</div>
+                    <div class="metric-label">Google Ads</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">35%</div>
+                    <div class="metric-label">Meta Ads</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">10%</div>
+                    <div class="metric-label">LinkedIn Ads</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">5%</div>
+                    <div class="metric-label">Testing Budget</div>
+                </div>
+            </div>
+
+            <h3>ROI Projections & Success Scenarios</h3>
+            
+            <h4>Conservative Scenario</h4>
+            <div class="highlight">
+                <ul>
+                    <li><strong>Leads Generated:</strong> 150 qualified leads</li>
+                    <li><strong>Average CPL:</strong> $150</li>
+                    <li><strong>Lead to Investor Rate:</strong> 5%</li>
+                    <li><strong>Investors Acquired:</strong> 7-8</li>
+                    <li><strong>Average Investment:</strong> $50,000</li>
+                    <li><strong>Capital Raised:</strong> $350,000 - $400,000</li>
+                    <li><strong>Acquisition Fee (2%):</strong> $7,000 - $8,000</li>
+                    <li><strong>Management Fee (2% annual):</strong> $7,000 - $8,000</li>
+                    <li><strong>Immediate ROI:</strong> Break-even on acquisition fees</li>
+                </ul>
+            </div>
+
+            <h4>Target Scenario</h4>
+            <div class="highlight" style="background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);">
+                <ul>
+                    <li><strong>Leads Generated:</strong> 250 qualified leads</li>
+                    <li><strong>Average CPL:</strong> $120</li>
+                    <li><strong>Lead to Investor Rate:</strong> 8%</li>
+                    <li><strong>Investors Acquired:</strong> 20</li>
+                    <li><strong>Average Investment:</strong> $75,000</li>
+                    <li><strong>Capital Raised:</strong> $1,500,000</li>
+                    <li><strong>Acquisition Fee (2%):</strong> $30,000</li>
+                    <li><strong>Management Fee (2% annual):</strong> $30,000</li>
+                    <li><strong>Immediate ROI:</strong> 150% on marketing investment</li>
+                </ul>
+            </div>
+
+            <h4>Optimistic Scenario</h4>
+            <div class="highlight" style="background: linear-gradient(120deg, #ffecd2 0%, #fcb69f 100%);">
+                <ul>
+                    <li><strong>Leads Generated:</strong> 400 qualified leads</li>
+                    <li><strong>Average CPL:</strong> $90</li>
+                    <li><strong>Lead to Investor Rate:</strong> 10%</li>
+                    <li><strong>Investors Acquired:</strong> 40</li>
+                    <li><strong>Average Investment:</strong> $100,000</li>
+                    <li><strong>Capital Raised:</strong> $4,000,000</li>
+                    <li><strong>Acquisition Fee (2%):</strong> $80,000</li>
+                    <li><strong>Management Fee (2% annual):</strong> $80,000</li>
+                    <li><strong>Immediate ROI:</strong> 400% on marketing investment</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="cta-box">
+            <h3>Ready to Transform Your Investor Acquisition?</h3>
+            <p>This comprehensive strategy positions Emaret Capital Group for explosive growth in the digital marketplace. With proven systems, advanced targeting, and continuous optimization, we'll build a sustainable investor pipeline that drives your syndication business forward.</p>
+            <div style="margin-top: 30px;">
+                <h4 style="color: white;">Next Steps:</h4>
+                <ol style="text-align: left; max-width: 600px; margin: 20px auto; color: white;">
+                    <li>Review and approve strategy components</li>
+                    <li>Provide necessary access and assets</li>
+                    <li>Sign pilot agreement and setup payment</li>
+                    <li>Kick off implementation Week 1</li>
+                    <li>Launch campaigns within 21 days</li>
+                </ol>
+            </div>
+            <p style="margin-top: 30px; font-size: 1.2em;">
+                <strong>Investment Required:</strong> $40,000 for 90-day pilot<br>
+                <strong>Expected Return:</strong> 150-400% ROI within 6 months<br>
+                <strong>Timeline to Launch:</strong> 21 days from agreement
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Appendix: Compliance & Legal Considerations</h2>
+            
+            <h3>SEC Regulation D 506(c) Compliance</h3>
+            <div class="highlight">
+                <h4>Marketing Requirements</h4>
+                <ul>
+                    <li>All marketing must include accredited investor disclaimers</li>
+                    <li>Cannot make guarantees about returns</li>
+                    <li>Must verify accredited status before accepting investment</li>
+                    <li>Include proper risk disclosures in all materials</li>
+                    <li>Maintain records of all marketing materials</li>
+                </ul>
+            </div>
+
+            <h3>Required Disclaimers</h3>
+            <div class="card">
+                <p><em>"This is neither an offer to sell nor a solicitation of an offer to buy any securities. Any offering of securities will be made only to accredited investors pursuant to Rule 506(c) of Regulation D under the Securities Act of 1933, as amended, and only in jurisdictions where permitted by law. Past performance is not indicative of future results. All investments involve risk, including potential loss of principal."</em></p>
+            </div>
+        </section>
+
+        <footer style="text-align: center; padding: 40px; color: #666;">
+            <p>© 2024 DevTech Digital Marketing | Confidential Strategy Document for Emaret Capital Group</p>
+            <p>This document contains proprietary strategies and methodologies. Do not distribute.</p>
+        </footer>
+    </div>
+</body>
+</html>
